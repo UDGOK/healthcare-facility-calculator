@@ -1,0 +1,7 @@
+[build]
+command = "NODE_ENV=production SKIP_ENV_VALIDATION=true bunx next build --no-lint"
+publish = ".next"
+
+[context.production.environment]
+NODE_VERSION = "18"
+SKIP_ENV_VALIDATION = "true"
